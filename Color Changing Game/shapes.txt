@@ -1,0 +1,3 @@
+Square: <i class="fa-solid fa-square"></i>
+Triangle: <i class="fa-solid fa-triangle"></i>
+Circle: <i class="fa-solid fa-circle"></i>
