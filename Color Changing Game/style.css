@@ -1,0 +1,38 @@
+.container{
+    height: 350px;
+    width: 250px;
+    margin: 150px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.outer{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+i{
+    font-size: 125px;
+    color: white;
+}
+.control{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    height: 35px;
+    width: 110px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px #66d9ff inset;
+}
