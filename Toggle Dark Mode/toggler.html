@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toggler.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="switch">
+        <span id="slider"></span>
+    </div>
+    <h1>Hi, I am Yash !</h1>
+    <script>
+        var dark = false;
+        var toggler = document.getElementById('switch');
+        var slider = document.getElementById('slider');
+        function toggle(){
+            if(dark == false){
+                slider.style.transform = "translateX(1.75cm)";
+                slider.style.backgroundColor = "white";
+                toggler.style.backgroundColor = "black";
+                toggler.style.border = "2px solid white";
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+                dark = true;
+            }
+            else{
+                slider.style.transform = "translateX(0cm)";
+                slider.style.backgroundColor = "black";
+                toggler.style.backgroundColor = "white";
+                toggler.style.border = "2px solid black";
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+                dark = false;
+            }
+        }
+        toggler.addEventListener('click',toggle);
+    </script>
+</body>
+</html>
